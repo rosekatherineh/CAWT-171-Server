@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+<!-- Rose Hernandez Bullock -->
 
 <head>
     <meta charset="utf-8">
@@ -112,7 +113,58 @@
             margin: 0;
         }
 
-        /* Firstname's Styles */
+        /* Rose's Styles */
+
+        body {
+            margin: 0;
+        }
+
+        header h1 {
+            margin-top: 0px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+        }
+
+        li {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        nav li {
+            flex-grow: 1;
+        }
+
+        #products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #labels {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+            flex-basis: 100px;
+        }
+
+        #button {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 2;
+        }
     </style>
 </head>
 
@@ -185,19 +237,16 @@
                 vulnerable patients, like those with pre-existing anxiety disorders.
             </p>
             <form action="#" method="post">
-                <div>
-                    <label for="fname">First Name:</label> <input type="text"
-                        name="fname" id="fname" required>
+                <div class="label">
+                    <label for="fname">First Name:</label> <input type="text" name="fname" id="fname" required>
                 </div>
-                <div>
-                    <label for="lname">Last Name:</label> <input type="text"
-                        name="lname" id="lname" required>
+                <div class="label">
+                    <label for="lname">Last Name:</label> <input type="text" name="lname" id="lname" required>
                 </div>
-                <div>
-                    <label for="email">Your Email:</label> <input type="email"
-                        name="email" id="email" required>
+                <div class="label">
+                    <label for="email">Your Email:</label> <input type="email" name="email" id="email" required>
                 </div>
-                <div>
+                <div class="button">
                     <button type="submit">Submit</button>
                     <button type="reset">Clear</button>
                 </div>
