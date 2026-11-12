@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+<!-- Rose Hernandez Bullock -->
 
 <head>
     <meta charset="utf-8">
@@ -112,87 +113,149 @@
             margin: 0;
         }
 
-        /* Rose's Styles */
+        /* Rose's Flexbox Styles */
 
-        .grid-container {
-            display: grid;
-            grid-template-areas:
-                "header header"
-                "nav nav"
-                "figure figure"
-                "products products"
-                "contact contact"
-                "footer footer";
-            gap: 15px;
-            grid-template-columns: 1fr 3fr;
-            padding: 5px;
+        body {
+            margin: 0;
         }
 
-        .header {
-            grid-area: header;
-        }
-
-        .nav {
-            grid-area: nav;
+        header h1 {
+            margin-top: 0px;
         }
 
         nav ul {
             list-style-type: none;
-            margin: 0;
-            padding: 0;
+            padding-left: 0px;
         }
 
-        .figure {
-            grid-area: figure;
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+        }
+
+        li {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        nav li {
+            flex-grow: 1;
         }
 
         #products {
-            grid-area: products;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #labels {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+            flex-basis: 100px;
+        }
+
+        #button {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 2;
+        }
+
+        /* Rose's Grid Styles */
+        img {
+            max-width: 100%;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        #content {
+            grid-area: main;
+            width: auto;
+            margin: 0 0 20px 20px;
+            padding: 20px;
+        }
+
+        figure {
+            max-width: 100%;
         }
 
         #contact {
-            grid-area: contact;
+            grid-area: sidebar;
+            background: rgb(243, 255, 188);
+            padding: 20px;
+            margin-right: 20px;
+            align-self: start;
         }
 
         footer {
             grid-area: footer;
+            margin-top: 0;
+            padding: 20px;
         }
 
+        body {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "main sidebar"
+                "footer footer";
+            grid-template-columns: minmax(0, 3fr) minmax(250px, 1fr);
+            gap: 20px;
+        }
+
+        /* form styling */
+        form {
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        form div {
+            padding: 5px 0;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            border: 1px solid rgb(33, 16, 11);
+        }
+
+        /* mobile */
         @media (max-width: 600px) {
-            .header {
-                grid-area: 1/span 6;
-            }
-
-            .nav {
-                grid-area: 2/span 1;
-            }
-
-            .figure {
-                grid-area: 3/span 6;
-            }
-
-            #products {
-                grid-area: 4/span 6;
-            }
-
-            #contact {
-                grid-area: 5/span 6;
-            }
-
-            footer {
-                grid-area: 6/span 6;
+            body {
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "sidebar"
+                    "footer";
+                grid-template-columns: minmax(0, 1fr);
+                gap: 15px;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="grid-container">
-        <header class="center">
-            <h1>Coffee Connection</h1>
-        </header>
-
-        <nav class="nav">
+    <header class="center">
+        <h1>Coffee Connection</h1>
+        <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -201,94 +264,91 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+    </header>
 
+    <main id="content">
         <figure class="center">
             <img src="images/people.png" alt="people drinking coffee">
         </figure>
-
-        <main id="content">
-
-            <h2 class="center">Welcome to Coffee Connection!</h2>
-
-            <blockquote>We’re not just passionate lovers of coffee, but everything else
-                that goes with a full and rewarding coffeehouse experience. We also offer
-                a selection of premium teas, fine pastries and other delectable treats.
-                And the music you hear in store is chosen for its artistry and appeal.
-                <br>
-                <br>
-                It’s not unusual to see people coming to Coffee Connection to chat, meet
-                up or even work. We’re a neighborhood gathering place, a part of the
-                daily routine, and would like to be part of your way of life.
-            </blockquote>
-
-            <section id="products">
-                <div class="product center">
-                    <h3>Espresso</h3>
-                    <p><img src="images/coffee_espresso.jpg" alt="expresso coffee"></p>
-                    <p>Popular espresso beverages</p>
-                </div>
-                <div class="product center">
-                    <h3>Blended</h3>
-                    <p><img src="images/coffee_blended.jpg" alt="blended coffee drinks">
-                    </p>
-                    <p>Delicious icy blends</p>
-                </div>
-                <div class="product center">
-                    <h3>Pastries</h3>
-                    <p><img src="images/coffee_pastries.jpg" alt="pastries"></p>
-                    <p>Muffins, bagels, coffee cakes, and more</p>
-                </div>
-                <div class="product center">
-                    <h3>Food</h3>
-                    <p><img src="images/coffee_food.jpg" alt="anytime food"></p>
-                    <p>Sandwiches, paninis, salads and more</p>
-                </div>
-                <div class="product center">
-                    <h3>Breakfast</h3>
-                    <p><img src="images/coffee_breakfast.jpg" alt="breakfast food"></p>
-                    <p>Biscuits, muffins, wraps, croissants, oatmeal and more</p>
-                </div>
-            </section>
-
-            <section id="contact">
-                <h2 class="center">Sign up to Receive Our Newsletter</h2>
-                <p>A cup of coffee in the morning may provide more than just an energy
-                    boost. Health benefits, say some researchers, may range from helping
-                    prevent diabetes to lowering the risk of liver disease. With over 400
-                    billion cups of coffee thought to be consumed every year, coffee is
-                    one of the world's most popular drinks. However, drinking too much
-                    coffee can result in some very unpleasant adverse effects. According
-                    to a study by researchers at the University of Oklahoma, caffeine can
-                    cause anxiety symptoms in normal individuals, especially in
-                    vulnerable patients, like those with pre-existing anxiety disorders.
+        <h2 class="center">Welcome to Coffee Connection!</h2>
+        <blockquote>We’re not just passionate lovers of coffee, but everything else
+            that goes with a full and rewarding coffeehouse experience. We also offer
+            a selection of premium teas, fine pastries and other delectable treats.
+            And the music you hear in store is chosen for its artistry and appeal.
+            <br>
+            <br>
+            It’s not unusual to see people coming to Coffee Connection to chat, meet
+            up or even work. We’re a neighborhood gathering place, a part of the
+            daily routine, and would like to be part of your way of life.
+        </blockquote>
+        <section id="products">
+            <div class="product center">
+                <h3>Espresso</h3>
+                <p><img src="images/coffee_espresso.jpg" alt="expresso coffee"></p>
+                <p>Popular espresso beverages</p>
+            </div>
+            <div class="product center">
+                <h3>Blended</h3>
+                <p><img src="images/coffee_blended.jpg" alt="blended coffee drinks">
                 </p>
-                <form action="#" method="post">
-                    <div>
-                        <label for="fname">First Name:</label> <input type="text" name="fname" id="fname" required>
-                    </div>
-                    <div>
-                        <label for="lname">Last Name:</label> <input type="text" name="lname" id="lname" required>
-                    </div>
-                    <div>
-                        <label for="email">Your Email:</label> <input type="email" name="email" id="email" required>
-                    </div>
-                    <div>
-                        <button type="submit">Submit</button>
-                        <button type="reset">Clear</button>
-                    </div>
-                </form>
-            </section>
-        </main>
+                <p>Delicious icy blends</p>
+            </div>
+            <div class="product center">
+                <h3>Pastries</h3>
+                <p><img src="images/coffee_pastries.jpg" alt="pastries"></p>
+                <p>Muffins, bagels, coffee cakes, and more</p>
+            </div>
+            <div class="product center">
+                <h3>Food</h3>
+                <p><img src="images/coffee_food.jpg" alt="anytime food"></p>
+                <p>Sandwiches, paninis, salads and more</p>
+            </div>
+            <div class="product center">
+                <h3>Breakfast</h3>
+                <p><img src="images/coffee_breakfast.jpg" alt="breakfast food"></p>
+                <p>Biscuits, muffins, wraps, croissants, oatmeal and more</p>
+            </div>
+        </section>
 
-        <footer class="center">
-            <address class="footer">
-                <p>PO Box 1234<br>
-                    San Diego, CA 92100<br>
-                    info@CoffeeConnection.com
-                </p>
-            </address>
-        </footer>
-    </div>
+    </main>
+
+    <section id="contact">
+        <h2 class="center">Sign up to Receive Our Newsletter</h2>
+        <p>A cup of coffee in the morning may provide more than just an energy
+            boost. Health benefits, say some researchers, may range from helping
+            prevent diabetes to lowering the risk of liver disease. With over 400
+            billion cups of coffee thought to be consumed every year, coffee is
+            one of the world's most popular drinks. However, drinking too much
+            coffee can result in some very unpleasant adverse effects. According
+            to a study by researchers at the University of Oklahoma, caffeine can
+            cause anxiety symptoms in normal individuals, especially in
+            vulnerable patients, like those with pre-existing anxiety disorders.
+        </p>
+        <form action="#" method="post">
+            <div class="label">
+                <label for="fname">First Name:</label> <input type="text" name="fname" id="fname" required>
+            </div>
+            <div class="label">
+                <label for="lname">Last Name:</label> <input type="text" name="lname" id="lname" required>
+            </div>
+            <div class="label">
+                <label for="email">Your Email:</label> <input type="email" name="email" id="email" required>
+            </div>
+            <div class="button">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="center">
+        <address>
+            <p>PO Box 1234<br>
+                San Diego, CA 92100<br>
+                info@CoffeeConnection.com
+            </p>
+        </address>
+    </footer>
 </body>
 
 </html>
