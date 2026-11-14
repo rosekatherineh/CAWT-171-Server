@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Rose Hernandez-Bullock-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Deep Seas</title>
+</head>
+
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 100%;
+        margin: 0px;
+    }
+
+    .main-section {
+        position: relative;
+        width: 100%;
+        height: 100%vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .main-section h1 {
+        text-align: center;
+        padding: 20px;
+        margin: 15px;
+        opacity: 0.7;
+        font-size: 5em;
+        font-style: italic;
+        color: rgb(226, 242, 242);
+    }
+
+    .main-section aside {
+        text-align: center;
+        padding: 20px;
+        margin: 15px;
+        opacity: 0.7;
+        font-size: 2em;
+        font-weight: 600;
+        color: rgb(226, 242, 242);
+    }
+
+    .main-section nav {
+        text-align: center;
+        display: flex;
+        padding: 20px;
+        margin: 15px;
+        font-size: 3em;
+    }
+
+    .main-section nav ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+
+    .main-section nav a {
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+
+    .main-section li {
+        display: inline-block;
+        padding: 10px 20px;
+    }
+
+    .main-section nav a:hover {
+        color: rgb(226, 242, 242);
+    }
+
+    .main-section h2,
+    blockquote {
+        text-align: center;
+        display: flex;
+        padding: 20px;
+        color: rgb(226, 242, 242);
+    }
+
+    .main-section footer {
+        text-align: center;
+        display: flex;
+        padding: 0px;
+        margin: px;
+        font-size: 1.5em;
+        color: rgb(226, 242, 242);
+    }
+
+    video {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+    .color-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: lightseagreen;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.5;
+        z-index: -1;
+    }
+</style>
+
+<body>
+    <section class="main-section">
+        <header>
+            <h1>GLASS BOAT TOURS</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tickets</a></li>
+            </ul>
+        </nav>
+
+        <h2>Book a Tour, Enjoy the Sights with Captain Nemo</h2>
+
+        <blockquote>
+            Captain Nemo will show you the reefs and talk about the beauty of life under the sea. Learn about sea
+            creatures, local sea legends, and the importance of protecting the reefs.
+        </blockquote>
+
+        <aside>
+            <p>Calm Under the Waves</p>
+        </aside>
+
+        <footer>
+            Dive in!
+        </footer>
+
+        <div class="color-overlay"></div>
+
+        <video autoplay loop muted>
+            <source src="6852158-sd_960_540_24fps.mp4" type="video/mp4">
+        </video>
+
+    </section>
+
+
+</body>
+
+</html>
