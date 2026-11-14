@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Video Background Demo</title>
+</head>
+
+
+<style>
+  body {
+    font-family: arial, sans-serif;
+    font-size: 100%;
+    /* initialize the font family size */
+    margin: 0px;
+    /* places everything at edges of screen  */
+  }
+
+
+  .main-section {
+    position: relative;
+    /* so that we can absolutely position the color overlay */
+    width: 100%;
+    /* we want it to fill the width of the viewport */
+    height: 100vh;
+    /* makes it 100% height of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    outline: 5px solid black;
+  }
+
+
+  .main-section h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+    opacity: 0.7;
+    font-size: 5em;
+  }
+
+  .main-section aside {
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+    opacity: 0.7;
+    font-size: 2em;
+  }
+
+
+  video {
+    min-width: 100%;
+    /* so it fits in area */
+    min-height: 100%;
+    position: absolute;
+    /* we want to place this over the main section */
+    top: 0;
+    left: 0;
+    z-index: -2;
+    /* places video in back */
+  }
+
+
+
+  .color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    width: 100%;
+    /* we want it to fill the width of the viewport */
+    height: 100vh;
+    /* makes it 100% height of the viewport */
+    opacity: 0.5;
+    z-index: -1;
+    /* places element in back but in front of video */
+  }
+
+
+  /*Rose's Styles*/
+</style>
+
+
+
+
+<body>
+
+  <section class="main-section">
+
+    <header>
+      <h1>ROAD RACES</h1>
+    </header>
+
+    <aside>
+      <p>If It Doesn't Challenge You, It Won't Change You</p>
+    </aside>
+
+    <video autoplay loop muted>
+      <source src="background_video.mp4" type="video/mp4">
+    </video>
+
+    <div class="color-overlay"></div>
+
+  </section>
+
+  <section>
+    <p>This is below the main section</p>
+  </section>
+
+  <!-- https://mediaboom.com example -->
+
+</body>
+
+</html>
