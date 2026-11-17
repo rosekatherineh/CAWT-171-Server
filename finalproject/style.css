@@ -12,6 +12,7 @@ nav {
     display: flex;
     padding: 10px 10px 10px 10px;
     margin: 5px;
+    width: 100%;
     border-radius: 1em;
     padding: 1px;
     background-color: white;
@@ -31,12 +32,22 @@ nav li {
     padding: 0 10px;
 }
 
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 5px 6px 3px #6d6a3a;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
 footer {
     text-align: center;
     display: flex;
     padding: 5px;
-    color: white;
-    background-color: black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 a:link {
