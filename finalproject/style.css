@@ -34,16 +34,16 @@ nav li {
 footer {
     text-align: center;
     display: flex;
-    padding: 1px;
+    padding: 5px;
     color: white;
     background-color: black;
 }
 
 a:link {
-    color: ;
+    color: rgb(38, 189, 38);
 }
 
 a:hover {
-    color: ;
-    font-weight: ;
+    color: rgb(255, 0, 208);
+    font-weight: bolder;
 }
