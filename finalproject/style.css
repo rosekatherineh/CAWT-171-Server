@@ -9,10 +9,9 @@ body {
 nav {
     font-size: 20px;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 960px;
-    padding: 10px;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
     border-radius: 1em;
     padding: 1px;
     background-color: white;
@@ -34,8 +33,10 @@ nav li {
 
 footer {
     text-align: center;
-    color: black;
-    outline: 5px solid white;
+    display: flex;
+    padding: 1px;
+    color: white;
+    background-color: black;
 }
 
 a:link {
