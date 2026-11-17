@@ -1,0 +1,48 @@
+body {
+    font-size: 100%;
+    font-family: epilogue, sans-serif;
+    background-image: url(images/pexels-cottonbro-4722583.jpg);
+    background-size: cover;
+    background-color: crimson;
+}
+
+nav {
+    font-size: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 960px;
+    padding: 10px;
+    border-radius: 1em;
+    padding: 1px;
+    background-color: white;
+    outline: 10px dotted yellow;
+}
+
+nav a {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: auto;
+    padding: 0 10px;
+}
+
+footer {
+    text-align: center;
+    color: black;
+    outline: 5px solid white;
+}
+
+a:link {
+    color: ;
+}
+
+a:hover {
+    color: ;
+    font-weight: ;
+}
