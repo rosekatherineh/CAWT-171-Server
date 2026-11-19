@@ -9,29 +9,27 @@ body {
 nav {
     font-size: 20px;
     text-align: center;
-    display: flex;
-    padding: 10px;
     margin: 20px;
     width: 100%;
     border-radius: 1em;
     padding: 1px;
     background-color: white;
     outline: 10px dotted yellow;
+}
 
+nav ul {
+    display: flex;
+    overflow: hidden;
+    list-style-type: none;
+    justify-content: space-around;
 }
 
 nav a {
-    color: black;
+    padding: 10px;
+    display: block;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-
-}
-
-nav li {
-    display: inline-block;
-    margin-left: auto;
-    padding: 0 10px;
 }
 
 h1 {
