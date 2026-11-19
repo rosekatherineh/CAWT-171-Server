@@ -168,36 +168,8 @@
         }
 
         /*  social icons */
-        #social {
-            padding: 10px;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        #social img {
-            margin-right: 10px;
-            margin-left: 10px;
-            cursor: pointer;
-        }
 
         /* Rose's Styles */
-        #news1:hover {
-            transform: rotate(-5deg) translateY(-20px);
-        }
-
-        #news2:hover {
-            transform: rotate(5deg) translateY(20px);
-        }
-
-        #social {
-            display: inline-block;
-            transition: transform 2s ease-in-out;
-        }
-
-        #social:hover {
-            transform: rotate(360deg) scale(1.5);
-        }
-
         #navtop a {
             background-color: rgb(228, 229, 231);
             transition: background-color 2s ease;
@@ -208,13 +180,21 @@
         }
 
         #news1 {
-            /* Rotates the elements counter-clockwise and shifts them upward */
-            transform: rotate(-3deg) translateY(-25px);
+            transform: rotate(-15deg);
+        }
 
-            #news2 {
-                /* Rotates the elements counter-clockwise and shifts them upward */
-                transform: rotate(3deg) translateY(25px);
-            }
+        #news2 {
+            transform: rotate(15deg);
+        }
+
+        #social {
+            display: inline-block;
+            transition: transform 2s ease-in-out;
+        }
+
+        #social:hover {
+            transform: rotate(360deg) scale(1.5);
+        }
     </style>
 </head>
 
@@ -361,9 +341,6 @@
             </div>
 
         </section>
-
-
-
         <footer>
             Our College &bull; 7500 College Drive &bull; Anywhere, California &bull; 92000
         </footer>
@@ -371,15 +348,20 @@
     </div>
     <!-- end main container -->
 
-
     <!-- container for social icons -->
     <aside id="social">
         <img src="image/icon_facebook.jpg" alt="Visit us on Facebook">
+    </aside>
 
+    <aside id="social">
         <img src="image/icon_twitter.jpg" alt="Visit us on Twitter">
+    </aside>
 
+    <aside id="social">
         <img src="image/icon_linkedin.jpg" alt="Visit us on Linked In">
+    </aside>
 
+    <aside id="social">
         <img src="image/icon_youtube.jpg" alt="Visit us on Youtube">
     </aside>
 
