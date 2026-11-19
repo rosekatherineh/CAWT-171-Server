@@ -8,13 +8,14 @@ body {
 
 nav {
     font-size: 20px;
-    text-align: center;
     margin: 20px;
     width: 100%;
     border-radius: 1em;
     padding: 1px;
     background-color: white;
     outline: 10px dotted yellow;
+    color: rgb(38, 189, 38);
+    width: calc(100% - 40px)
 }
 
 nav ul {
@@ -23,6 +24,8 @@ nav ul {
     list-style-type: none;
     justify-content: space-around;
 }
+
+nav li {}
 
 nav a {
     padding: 10px;
