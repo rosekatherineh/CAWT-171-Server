@@ -10,13 +10,14 @@ nav {
     font-size: 20px;
     text-align: center;
     display: flex;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
+    margin: 20px;
     width: 100%;
     border-radius: 1em;
     padding: 1px;
     background-color: white;
     outline: 10px dotted yellow;
+
 }
 
 nav a {
@@ -24,6 +25,7 @@ nav a {
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
+
 }
 
 nav li {
