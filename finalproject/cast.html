@@ -13,7 +13,31 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
 
+        .container img {
+            width: 100px;
+            height: auto;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -35,64 +59,141 @@
         <p>Extra, extra, learn about a quarter of the Muppets gang&#33;</p>
         <p>Go row by row, I explain how each one looks and a little fun fact about them.</p>
         <h2>Cast</h2>
-        <p>
+        <div class="img-container">
             <img src="images/Muppets.jpg" width="400" height="300" alt="The Muppets Cast">
-        </p>
+        </div>
         <Section>
             <h3>Top row, left to right</h3>
-            <img src="images/beaker_cropped_circle_image.png" width="100" height="100" alt="Beaker">
-            <p>Beaker, the assitant to Dr. Bunsen Honeydew, is proned to getting into accidents. His big bulging
-                eyes, red hair, and his frowny face says it all that he&rsquo;s a very nervous guy. He says mostly
-                &quot;mee-mee-mee&quot;.</p>
-            <img src="images/animal_cropped_circle.png" width="100" height="100" alt="animal">
-            <p>Animal is a red monster with thick, bushy eyebrows and chains. He is a band member of The
-                Electric Myahem and he plays the drums. He has a very deep, booming laugh and tends to say simple
-                phrases. He also is known for his crazy outbursts.</p>
-            <img src="images/rowlf_cropped_circle_image.png" width="100" height="100" alt="rowlf">
-            <p>Rowlf the Dog is a brown dog who tickles the keys, a gifted dog who loves playing piano. His
-                humor is deadpan and is very chill.</p>
-            <img src="images/scooter_cropped_circle_image(1).png" width="100" height="100" alt="scooter">
-            <p>Scooter has orange hair, glasses, and a green jacket. He&rsquo;s the backstage manager and a stage
-                crew member.</p>
+            <div class="container">
+                <img src="images/beaker_cropped_circle_image.png" width="100" height="100" alt="Beaker">
+                <div class="text-content">
+                    <p>Beaker, the assitant to Dr. Bunsen Honeydew, is proned to getting into accidents. His big bulging
+                        eyes, red hair, and his frowny face says it all that he&rsquo;s a very nervous guy. He says
+                        mostly
+                        &quot;mee-mee-mee&quot;.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/animal_cropped_circle.png" width="100" height="100" alt="animal">
+                <div class="text-content">
+                    <p>Animal is a red monster with thick, bushy eyebrows and chains. He is a band member of The
+                        Electric Myahem and he plays the drums. He has a very deep, booming laugh and tends to say
+                        simple phrases. He also is known for his crazy outbursts.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/rowlf_cropped_circle_image.png" width="100" height="100" alt="rowlf">
+                <div class="text-content">
+                    <p>Rowlf the Dog is a brown dog who tickles the keys, a gifted dog who loves playing piano. His
+                        humor is deadpan and is very chill.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/scooter_cropped_circle_image(1).png" width="100" height="100" alt="scooter">
+                <div class="text-content">
+                    <p>Scooter has orange hair, glasses, and a green jacket. He&rsquo;s the backstage manager and a
+                        stage
+                        crew member.</p>
+                </div>
+            </div>
             <h3>Second row to the top, left to right</h3>
-            <img src="images/drteethcropped_circle_image.png" width="100" height="100" alt="dr teeth">
-            <p>Dr. Teeth is the green-skinned fellow with red hair and large teethy grin. He&rsquo;s the lead signer
-                and keyboardist of the Electric Myahem.</p>
-            <img src="images/waldorf_cropped_circle_image.png" width="100" height="100" alt="waldorf">
-            <p>Waldorf is old heckler with thick grey eyebrows and black suit. He tends to heckle people with
-                his friend, Statler. </p>
-            <img src="images/statler_cropped_circle_image.png" width="100" height="100" alt="Statler">
-            <p>Statler is also an old heckler with a grey mustache and brown suit. He loves to heckle people
-                with Waldorf.</p>
-            <img src="images/fozzie_cropped_circle_image.png" width="100" height="100" alt="fozzie bear">
-            <p>Fozzie Bear is a brown bear with a pink nose, brown bowler hat, and a white and pink polka dotted
-                scarf. He&rsquo;s a stand up comedian who is known for his iconic laugh, wakka wakka&#33;</p>
+            <div class="container">
+                <img src="images/drteethcropped_circle_image.png" width="100" height="100" alt="dr teeth">
+                <div class="text-content">
+                    <p>Dr. Teeth is the green-skinned fellow with red hair and large teethy grin. He&rsquo;s the lead
+                        signer and keyboardist of the Electric Myahem.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/waldorf_cropped_circle_image.png" width="100" height="100" alt="waldorf">
+                <div class="text-content">
+                    <p>Waldorf is old heckler with thick grey eyebrows and black suit. He tends to heckle people
+                        with his friend, Statler. </p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/statler_cropped_circle_image.png" width="100" height="100" alt="Statler">
+                <div class="text-content">
+                    <p>Statler is also an old heckler with a grey mustache and brown suit. He loves to heckle
+                        people with Waldorf.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/fozzie_cropped_circle_image.png" width="100" height="100" alt="fozzie bear">
+                <div class="text-content">
+                    <p>Fozzie Bear is a brown bear with a pink nose, brown bowler hat, and a white and pink
+                        polka dotted
+                        scarf. He&rsquo;s a stand up comedian who is known for his iconic laugh, wakka
+                        wakka&#33;</p>
+                </div>
+            </div>
             <h3>Third row towards the bottom, left to right</h3>
-            <img src="images/swedish_cropped_circle_image.png" width="100" height="100" alt="rswedish chef">
-            <p>Swedish Chef is known for his odd cooking skills and talks like a Swedish person if they spoke in
-                gibberish. He is known to have real human hands. His phrase is &quot;Bork, bork, bork&quot;.</p>
-            <img src="images/janice_cropped_circle_image.png" width="100" height="100" alt="janice">
-            <p>Janice has blonde hair, big eyelashes, and big lips. She&rsquo;s a part of the Electric Mayhem band
-                and she plays guitar and is a backup singer. She&rsquo;s very much a valley girl.</p>
-            <img src="images/floyd_pepper_cropped_circle_image.png" width="100" height="100" alt="floyd pepper">
-            <p>Floyd Pepper is the pink-skinned fellow with long orange hair and wears a green army hat. He&rsquo;s
-                very much a hippie and very laid back. He is also a part of the Electric Mayhem band and plays the
-                bass and sings back up.</p>
-            <img src="images/miss_piggy_cropped_circle_image.png" width="100" height="100" alt="miss piggy">
-            <p>Miss Piggy is the beauty queen of the Muppets. She tends to speak with French phrases, practices
-                karate, and is a bit of a diva. She is in an on and off relationship with Kermit the Frog.</p>
+            <div class="container">
+                <img src="images/swedish_cropped_circle_image.png" width="100" height="100" alt="rswedish chef">
+                <div class="text-content">
+                    <p>Swedish Chef is known for his odd cooking skills and talks like a Swedish person if
+                        they spoke in
+                        gibberish. He is known to have real human hands. His phrase is &quot;Bork, bork,
+                        bork&quot;.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/janice_cropped_circle_image.png" width="100" height="100" alt="janice">
+                <div class="text-content">
+                    <p>Janice has blonde hair, big eyelashes, and big lips. She&rsquo;s a part of the
+                        Electric Mayhem band and she plays guitar and is a backup singer. She&rsquo;s very much a valley
+                        girl.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/floyd_pepper_cropped_circle_image.png" width="100" height="100" alt="floyd pepper">
+                <div class="text-content">
+                    <p>Floyd Pepper is the pink-skinned fellow with long orange hair and wears a green army
+                        hat. He&rsquo;s very much a hippie and very laid back. He is also a part of the Electric Mayhem
+                        band
+                        and plays the bass and sings back up.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/miss_piggy_cropped_circle_image.png" width="100" height="100" alt="miss piggy">
+                <div class="text-content">
+                    <p>Miss Piggy is the beauty queen of the Muppets. She tends to speak with French
+                        phrases, practices karate, and is a bit of a diva. She is in an on and off relationship with
+                        Kermit the Frog.</p>
+                </div>
+            </div>
             <h3>Bottom row, left to right</h3>
-            <img src="images/zoot_cropped_circle_image.png" width="100" height="100" alt="zoot">
-            <p>Zoot is the blue-skinned fellow that&rsquo;s balding and tends to wear dark sunglasses and a blue
-                hat. He is a a part of the Electric Mayhem and he plays the saxophone. </p>
-            <img src="images/camilla_cropped_circle_image.png" width="100" height="100" alt="camilla">
-            <p>Camilla the Chicken is a white chicken with blue eyelids, the other chickens have purple eyelids.
-                She&rsquo;s Gonzo&rsquo;s girlfriend.</p>
-            <img src="images/gonzo_cropped_circle_image.png" width="100" height="100" alt="gonzo">
-            <p>Gonzo is a blue creature with a long hooked nose. He is known for doing extreme stunts.</p>
-            <img src="images/kermit_cropped_circle_image.png" width="100" height="100" alt="kermit">
-            <p>Kermit the Frog is the stage manager of the Muppets. He is the face of the Jim Henson Company.
-                It&rsquo;s widely known that Kermit is the muppet that Jim Henson relates to, personality wise.</p>
+            <div class="container">
+                <img src="images/zoot_cropped_circle_image.png" width="100" height="100" alt="zoot">
+                <div class="text-content">
+                    <p>Zoot is the blue-skinned fellow that&rsquo;s balding and tends to wear dark
+                        sunglasses and a blue hat. He is a a part of the Electric Mayhem and he plays the saxophone.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/camilla_cropped_circle_image.png" width="100" height="100" alt="camilla">
+                <div class="text-content">
+                    <p>Camilla the Chicken is a white chicken with blue eyelids, the other chickens have
+                        purple eyelids. She&rsquo;s Gonzo&rsquo;s girlfriend.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/gonzo_cropped_circle_image.png" width="100" height="100" alt="gonzo">
+                <div class="text-content">
+                    <p>Gonzo is a blue creature with a long hooked nose. He is known for doing
+                        extreme stunts.</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/kermit_cropped_circle_image.png" width="100" height="100" alt="kermit">
+                <div class="text-content">
+                    <p>Kermit the Frog is the stage manager of the Muppets. He is the face of
+                        the Jim Henson Company. It&rsquo;s widely known that Kermit is the muppet that Jim
+                        Henson relates to, personality wise.</p>
+                </div>
+            </div>
         </section>
 
         <section>
@@ -102,8 +203,8 @@
                 to make his projects come to life. Not only did they voice the characters, but also performed as the
                 characters. Frank Oz, Dave Goelz, Richard Hunt, Jerry Nelson, Caroll Spinney, Steve Whitmere, and Bill
                 Baretta are some famous puppeteers that helped breathe life into them.</p>
-            <img src="images/Muppet-Show-puppeteers.jpeg" width="500" height="300"
-                alt="old photo of different puppeteers holding muppets in front of the Muppets logo on stage">
+            <div class="img-container"><img src="images/Muppet-Show-puppeteers.jpeg" width="500" height="300"
+                    alt="old photo of different puppeteers holding muppets in front of the Muppets logo on stage"></div>
         </section>
     </main>
     <footer>
